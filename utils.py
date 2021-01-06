@@ -54,18 +54,18 @@ def order_mocha():
       return 'mocha'
     print_message()
   
-  # Brewed coffee function
-  def order_brewed_coffee():
-    res = input("How would you like your coffee? \n[a] Black \n[b] With cream \n[c] With sugar \n[d] With cream and sugar \n> ")
-      
-      if res == 'a':
-        return 'black coffee'
-      elif res == 'b':
-        return 'coffee with cream'
-      elif res == 'c':
-        return 'coffee with sugar'
-      elif res == 'd':
-        return 'coffee with cream and sugar'
-      else:
-        print_message()
-        order_brewed_coffee()
+# Brewed coffee function
+def order_brewed_coffee():
+  res = input("How would you like your coffee? \n[a] Black \n[b] With cream \n[c] With sugar \n[d] With cream and sugar \n> ")
+
+  if res == 'a':
+      return 'black coffee'
+  elif res == 'b':
+    return 'coffee with cream'
+  elif res == 'c':
+    return 'coffee with sugar'
+  elif res == 'd':
+    return 'coffee with cream and sugar'
+  else:
+    print_message()
+    order_brewed_coffee()
