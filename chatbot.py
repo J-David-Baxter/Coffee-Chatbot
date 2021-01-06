@@ -25,7 +25,8 @@ def coffee_bot():
     print("-", drink)
   
   if len(drinks) > 1:
-    cup_holder()
+    cup_holder_status = cup_holder()
+    print(cup_holder_status)
   
   name = input('Can I get your name please? \n> ')
   print('Thanks, {}! Your order will be ready shortly.'.format(name))
