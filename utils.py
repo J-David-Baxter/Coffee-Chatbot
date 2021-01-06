@@ -87,3 +87,14 @@ def order_tea():
     elif res == 'e':
       return 'apple cinnamon tea'
     print_message()
+
+# Cup holder function
+def cup_holder():
+  while True:
+    res =  input("Would you like a cup holder? (y/n) \n> ")
+
+    if res == 'y':
+      return 'Got it, we\'ll put your drinks in a cup holder.'
+    elif res == 'n':
+      return 'Ok, we won\'t put your drinks in a cup holder.
+    print_message()
