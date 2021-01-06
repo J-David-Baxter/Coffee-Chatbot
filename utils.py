@@ -1,10 +1,10 @@
-# Error message
+# Error message for incorrect user input
 def print_message():
   print('I\'m sorry, I did not understand your selection. Please enter the corresponding letter for your response.')
 
 # Drink type function
 def get_drink_type():
-  res = input('What type of drink would you like? \n[a] Brewed Coffee \n[b] Mocha \n[c] Latte \n> ')
+  res = input('What type of drink would you like? \n[a] Brewed Coffee \n[b] Mocha \n[c] Latte \n[d] Tea \n> ')
 
   if res == 'a':
     return order_brewed_coffee()
@@ -12,6 +12,8 @@ def get_drink_type():
     return order_mocha()
   elif res == 'c':
     return order_latte()
+  elif res == 'd':
+    return 'tea'
   else:
     print_message()
     return get_drink_type()
@@ -44,7 +46,7 @@ def order_latte():
     print_message()
     return order_latte()
 
-# Mocha function
+# Mocha options function
 def order_mocha():
   while True:
     res = input("Would you like to try our limited-edition peppermint mocha? \n[a] Sure! \n[b] Maybe next time! \n> ")
@@ -54,7 +56,7 @@ def order_mocha():
       return 'mocha'
     print_message()
   
-# Brewed coffee function
+# Brewed coffee options cuntion
 def order_brewed_coffee():
   while True:
     res = input("How would you like your coffee? \n[a] Black \n[b] With cream \n[c] With sugar \n[d] With cream and sugar \n> ")
@@ -68,3 +70,5 @@ def order_brewed_coffee():
   elif res == 'd':
     return 'coffee with cream and sugar'
   print_message
+
+# Tea option function goes here
