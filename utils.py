@@ -7,7 +7,7 @@ def get_drink_type():
   res = input('What type of drink would you like? \n[a] Brewed Coffee \n[b] Mocha \n[c] Latte \n> ')
 
   if res == 'a':
-    return 'brewed coffee'
+    return order_brewed_coffee()
   elif res == 'b':
     return order_mocha()
   elif res == 'c':
@@ -53,3 +53,19 @@ def order_mocha():
     elif res == 'b':
       return 'mocha'
     print_message()
+  
+  # Brewed coffee function
+  def order_brewed_coffee():
+    res = input("How would you like your coffee? \n[a] Black \n[b] With cream \n[c] With sugar \n[d] With cream and sugar \n> ")
+      
+      if res == 'a':
+        return 'black coffee'
+      elif res == 'b':
+        return 'coffee with cream'
+      elif res == 'c':
+        return 'coffee with sugar'
+      elif res == 'd':
+        return 'coffee with cream and sugar'
+      else:
+        print_message()
+        order_brewed_coffee()

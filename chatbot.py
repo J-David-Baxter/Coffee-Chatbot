@@ -1,4 +1,4 @@
-from utils import print_message, get_size, order_latte, get_drink_type, order_mocha
+from utils import print_message, get_size, order_latte, get_drink_type, order_mocha, order_brewed_coffee
 
 # Coffee Bot function
 def coffee_bot():
@@ -26,10 +26,6 @@ def coffee_bot():
   
   name = input('Can I get your name please? \n> ')
   print('Thanks, {}! Your order will be ready shortly.'.format(name))
-
-
-  
-
 
 
 coffee_bot()
