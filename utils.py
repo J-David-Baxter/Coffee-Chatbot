@@ -96,5 +96,5 @@ def cup_holder():
     if res == 'y':
       return 'Got it, we\'ll put your drinks in a cup holder.'
     elif res == 'n':
-      return 'Ok, we won\'t put your drinks in a cup holder.
+      return 'Ok, we won\'t put your drinks in a cup holder.'
     print_message()
