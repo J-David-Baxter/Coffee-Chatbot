@@ -61,14 +61,15 @@ def order_brewed_coffee():
   while True:
     res = input("How would you like your coffee? \n[a] Black \n[b] With cream \n[c] With sugar \n[d] With cream and sugar \n> ")
 
-  if res == 'a':
+    if res == 'a':
       return 'black coffee'
-  elif res == 'b':
-    return 'coffee with cream'
-  elif res == 'c':
-    return 'coffee with sugar'
-  elif res == 'd':
-    return 'coffee with cream and sugar'
-  print_message
+    elif res == 'b':
+      return 'coffee with cream'
+    elif res == 'c':
+      return 'coffee with sugar'
+    elif res == 'd':
+      return 'coffee with cream and sugar'
+    print_message
 
-# Tea option function goes here
+# Tea options function
+
