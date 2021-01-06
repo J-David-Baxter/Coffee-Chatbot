@@ -69,7 +69,6 @@ def order_brewed_coffee():
       return 'coffee with sugar'
     elif res == 'd':
       return 'coffee with cream and sugar'
-    print_message
+    print_message()
 
 # Tea options function
-
