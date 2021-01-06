@@ -13,7 +13,7 @@ def get_drink_type():
   elif res == 'c':
     return order_latte()
   elif res == 'd':
-    return 'tea'
+    return order_tea()
   else:
     print_message()
     return get_drink_type()
@@ -49,7 +49,7 @@ def order_latte():
 # Mocha options function
 def order_mocha():
   while True:
-    res = input("Would you like to try our limited-edition peppermint mocha? \n[a] Sure! \n[b] Maybe next time! \n> ")
+    res = input("Would you like to try our limited-edition peppermint mocha? \n[a] Sure! \n[b] Maybe next time \n> ")
     if res == 'a':
       return 'peppermint mocha'
     elif res == 'b':
@@ -72,3 +72,18 @@ def order_brewed_coffee():
     print_message()
 
 # Tea options function
+def order_tea():
+  while True:
+    res = input("What type of tea would you like? \n[a] Earl Grey \n[b] Pumpkin Spice \n[c] Vanilla \n[d] Raspberry \n[e] Apple Cinnamon \n> ")
+
+    if res == 'a':
+      return 'Earl Grey tea'
+    elif res == 'b':
+      return 'pumpkin spice tea'
+    elif res == 'c':
+      return 'vanilla tea'
+    elif res == 'd':
+      return 'raspberry tea'
+    elif res == 'e':
+      return 'apple cinnamon tea'
+    print_message()
