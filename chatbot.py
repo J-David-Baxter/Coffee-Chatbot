@@ -1,4 +1,4 @@
-from utils import print_message, get_size, order_latte, get_drink_type, order_mocha, order_brewed_coffee, order_tea, cup_holder, ice
+from utils import print_message, get_size, order_latte, get_drink_type, order_mocha, order_brewed_coffee, order_tea, cup_holder
 
 # Coffee Bot function
 def coffee_bot():
@@ -10,9 +10,20 @@ def coffee_bot():
   while order_drink == 'y':  
     drink_type = get_drink_type()
     size = get_size()
-    iced_drink = ice()
 
-    
+    def ice():
+      res = input("Woudl you like ice with your drink? (y/n) \n> ")
+      if res == 'y':
+        drink_type = 'iced ' + drink_type
+        return drink_type
+      elif res == 'n':
+        drink_type = drink_type
+        return drink_type
+      else:
+        print_message()
+        return ice()
+
+    ice()
     drink = '{} {}'.format(size, drink_type)
     print('Alright, that\'s a {}!'.format(drink))
     drinks.append(drink)

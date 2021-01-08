@@ -1,5 +1,3 @@
-from chatbot import drink_type
-
 # Error message for incorrect user input
 def print_message():
   print('I\'m sorry, I did not understand your selection. Please enter the corresponding letter for your response.')
@@ -99,15 +97,4 @@ def cup_holder():
       return 'Got it, we\'ll put your drinks in a cup holder.'
     elif res == 'n':
       return 'Ok, we won\'t put your drinks in a cup holder.'
-    print_message()
-
-# Ice option function
-def ice():
-  while True:
-  res = input("Woudl you like ice with your drink? (y/n) \n> ")
-    if res == 'y':
-      drink_type = 'iced ' + drink_type
-      return drink_type
-    elif res == 'n':
-      return drink_type
     print_message()
