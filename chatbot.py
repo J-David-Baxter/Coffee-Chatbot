@@ -1,4 +1,4 @@
-from utils import print_message, get_size, order_latte, get_drink_type, order_mocha, order_brewed_coffee, order_tea, cup_holder
+from utils import print_message, get_size, order_latte, get_drink_type, order_mocha, order_brewed_coffee, order_tea, cup_holder, ice
 
 # Coffee Bot function
 def coffee_bot():
@@ -7,9 +7,10 @@ def coffee_bot():
   order_drink = 'y'
   drinks = []
   
-  while order_drink == 'y':
-    size = get_size()  
+  while order_drink == 'y':  
     drink_type = get_drink_type()
+    size = get_size()
+    ice()
 
     drink = '{} {}'.format(size, drink_type)
     print('Alright, that\'s a {}!'.format(drink))
