@@ -94,7 +94,7 @@ def cup_holder():
     res =  input("Would you like a cup holder? (y/n) \n> ")
 
     if res == 'y':
-      return 'Got it, we\'ll put your drinks in a cup holder.'
+      return 'Ok, we\'ll put your drinks in a cup holder.'
     elif res == 'n':
       return 'Ok, we won\'t put your drinks in a cup holder.'
     print_message()
