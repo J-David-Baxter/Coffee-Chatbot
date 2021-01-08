@@ -98,3 +98,7 @@ def cup_holder():
     elif res == 'n':
       return 'Ok, we won\'t put your drinks in a cup holder.'
     print_message()
+
+# Ice question function
+def ice():
+  return input("Would you like ice with your drink? (y/n) \n> ")
