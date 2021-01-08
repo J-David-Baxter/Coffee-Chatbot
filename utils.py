@@ -56,7 +56,7 @@ def order_mocha():
       return 'mocha'
     print_message()
   
-# Brewed coffee options cuntion
+# Brewed coffee options function
 def order_brewed_coffee():
   while True:
     res = input("How would you like your coffee? \n[a] Black \n[b] With cream \n[c] With sugar \n[d] With cream and sugar \n> ")
