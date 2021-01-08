@@ -10,7 +10,14 @@ def coffee_bot():
   while order_drink == 'y':  
     drink_type = get_drink_type()
     size = get_size()
-    ice()
+    
+    ice = input("Woudl you like ice with your drink? (y/n) \n> ")
+    if ice == 'y':
+      drink_type = 'iced ' + drink_type
+    elif ice == 'n':
+      drink_type = drink_type
+    else:
+      print_message()
 
     drink = '{} {}'.format(size, drink_type)
     print('Alright, that\'s a {}!'.format(drink))
